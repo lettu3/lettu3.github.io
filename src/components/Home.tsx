@@ -1,3 +1,4 @@
+/* Home.tsx */
 import icon from '/home.svg';
 import './Home.css';
 import { useLocation, useNavigate } from 'react-router-dom';

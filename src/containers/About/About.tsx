@@ -1,3 +1,4 @@
+/* About.tsx */
 import { useTranslation } from "react-i18next";
 import Personal from "../../components/Personal";
 import './About.css';

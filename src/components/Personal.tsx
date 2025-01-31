@@ -1,3 +1,4 @@
+/* Personal.tsx */
 import './Personal.css';
 
 export default function Personal() {

@@ -1,3 +1,4 @@
+/* Dropdown.tsx */
 import { useSelector, useDispatch } from "react-redux";
 import { toggleDropdown, selectItem } from "../state/dropdown/dropdownSlice";
 import { RootState } from "../state/store";

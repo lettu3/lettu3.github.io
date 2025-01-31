@@ -1,3 +1,4 @@
+/* Lang.tsx */
 import './Lang.css'
 import { useDispatch, useSelector } from "react-redux"
 import { RootState } from "../state/store";

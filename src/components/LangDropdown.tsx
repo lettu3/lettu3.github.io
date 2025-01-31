@@ -1,3 +1,4 @@
+/* LangDropdown.tsx */
 import Dropdown from './Dropdown.tsx';
 import {Item} from './Dropdown.tsx';
 import i18next from 'i18next';
