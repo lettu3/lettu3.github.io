@@ -3,11 +3,13 @@ import { useSelector } from "react-redux";
 import { RootState } from "../state/store";
 import Flsdmfr from "../components/Flsdmfr";
 import Header from "../containers/Header/Header";
+import Dropdown from "../components/Dropdown";
+import LangDropDown from "../components/LangDropdown";
 
 const items = [
-    {id: 1, title: "Item 1", desc: "This is the desc of item 1"},
-    {id: 2, title: "Item 2", desc: "This is the desc of item 2"}, 
-    {id: 3, title: "Item 3", desc: "This is the desc of item 3"}
+    {id: 1, title: "[EN] - English", },
+    {id: 2, title: "[ES] - Espanol", }, 
+    {id: 3, title: "[JP] - 日本語", },
 ]
 
 function TestPage () {
@@ -20,7 +22,7 @@ function TestPage () {
     return (
         <div>
             <Header/>
-            <Flsdmfr whatever = {items}/>
+            <LangDropDown items={items}/>
         </div>
     );
 }
