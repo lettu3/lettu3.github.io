@@ -1,6 +1,5 @@
 /* Header.tsx */
 import Theme from "../../components/Theme";
-import Lang from "../../components/Lang";
 import Home from "../../components/Home";
 import './Header.css';
 import LangDropDown from "../../components/LangDropdown";
