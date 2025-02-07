@@ -1,9 +1,8 @@
+import './TestPage.css'
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { RootState } from "../state/store";
-import Flsdmfr from "../components/Flsdmfr";
 import Header from "../containers/Header/Header";
-import Dropdown from "../components/Dropdown";
 import LangDropDown from "../components/LangDropdown";
 
 const items = [
@@ -20,8 +19,7 @@ function TestPage () {
     }, [theme]);
 
     return (
-        <div>
-            <Header/>
+        <div className="TestPage">
             <LangDropDown items={items}/>
         </div>
     );
