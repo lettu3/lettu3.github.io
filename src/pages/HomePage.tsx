@@ -15,11 +15,11 @@ function HomePage() {
   }, [theme]);
 
   return (
-    <>
+    <div className='HomePage'>
     <Header />
     <Body />
     <Footer />
-    </>
+    </div>
   )
 }
 
