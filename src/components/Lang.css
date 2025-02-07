@@ -1,7 +1,7 @@
 .lang {
     width: 35px;
     height: 35px;
-    border:1px solid red;
+    border:none;
     background: none;
     cursor: pointer;
     padding: 0;

@@ -1,7 +1,10 @@
 /* Dropdown.tsx */
+import './Dropdown.css';
+import { useEffect, useState} from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import { toggleDropdown, selectItem } from "../state/dropdown/dropdownSlice";
 import { RootState } from "../state/store";
+import { useLocation } from 'react-router-dom';
 
 type Item = {id: number, title: string};
 
@@ -15,8 +18,15 @@ export default function DropdownMenu({ items, onItemSelect }: DropdownMenuProps)
   const selectedItem = useSelector((state : RootState) => state.dropdown.selectedItem);
   const theme = useSelector((state: RootState) => state.theme.value);
   const dispatch = useDispatch();
+  const location = useLocation();
 
-  const current_icon = theme === 'light' ? '/langLight.svg' : '/langDark.svg';
+  const [current_icon, setCurrentIcon] = useState<string>(
+    theme === 'light' ? '/langLight.svg' : '/langDark.svg'
+  );
+  useEffect(() => {
+    const icon = theme === 'light' ? '/langLight.svg' : '/langDark.svg';
+    setCurrentIcon(icon);
+  }, [theme]);
 
 
   const handleToggle = () => {
@@ -24,21 +34,29 @@ export default function DropdownMenu({ items, onItemSelect }: DropdownMenuProps)
   };
 
   const handleSelect = (item : Item) => {
-    dispatch(selectItem(item));
-    dispatch(toggleDropdown(false)); // not sure, maybe let the user close the dropdown manually
+    console.log('selected item:', item);
+    dispatch(selectItem(item.id));
     if (onItemSelect) {
       onItemSelect(item);
     }
   };
 
+  useEffect(() => {
+    if (isOpen) {
+      dispatch(toggleDropdown(false));
+    }
+  }, [location.pathname]);
+
   return (
-    <div>
+    <div className='dropdown-container'>
       <button onClick={handleToggle} className="lang"><img src={current_icon} className="lang-icon" /></button>
       {isOpen && (
-        <ul>
+        <ul className='dropdown-menu'>
           {items.length > 0 ? (
             items.map((item, index) => (
-              <li key={index} onClick={() => handleSelect(item)} style={{border : "1px solid green"}}>
+              <li key={index}
+                  onClick={() => handleSelect(item)} 
+                  className={`dropdown-item ${selectedItem === item.id ? 'selected' : ''}`}>
                 {item.title}
               </li>
             ))
