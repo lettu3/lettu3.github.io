@@ -17,11 +17,11 @@ function ProjectEntryBlog({date, title, description, link, image}: ProjectEntryB
 
   return (
     <div className="ProjectEntryBlog">
-      <div className='ProjectEntryBlog-date'>{date}</div>
+      <div className='ProjectEntryBlog-date'>{t(date)}</div>
       <div className='ProjectEntryBlog-content'>
-        <div className="ProjectEntryBlog-title">{title}</div>
-        {image && <img className='ProjectEntryBlog-image' src={image} alt={title} />}
-        <div className="ProjectEntryBlog-description">{description}</div>
+        <div className="ProjectEntryBlog-title">{t(title)}</div>
+        {image && <div className='ProjectEntryBlog-image-wrapper'><img className='ProjectEntryBlog-image' src={image} alt={title} /></div>}
+        <div className="ProjectEntryBlog-description">{t(description)}</div>
         <div className='ProjectEntryBlog-link'><Link to={link}>{t("Read more")}</Link></div>
       </div>
     </div>

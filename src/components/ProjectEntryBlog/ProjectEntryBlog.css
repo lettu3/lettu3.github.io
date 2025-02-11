@@ -1,7 +1,7 @@
 /*Mobile by default, media queries for Desktop Screens*/
 
 .ProjectEntryBlog{
-    background: green;
+    background: var(--footer-bg-color);
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -26,7 +26,7 @@
 @media (min-width: 768px) {
     .ProjectEntryBlog-date{
         margin-bottom: 0;
-        margin-left: 4%;
+        margin-right: 4%;
         flex-shrink: 0;
         width: 20%;
         text-align: left;
@@ -50,16 +50,30 @@
     }
 }
 
-.ProjectEntryBlog-image{
+.ProjectEntryBlog-image-wrapper{
     width: 100%;
     margin-top: 1%;
+    height: 200px;
+    overflow: hidden;
     border-radius: 40px;
+    z-index: 1;
+}
+
+.ProjectEntryBlog-image{
+    width: 100%;
     height: 200px;
     object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+.ProjectEntryBlog-image:hover{
+    transform: scale(1.05);
 }
 
 .ProjectEntryBlog-description{
     margin-top: 4%;
+    margin-bottom: 1%;
 }
 @media (min-width: 768px) {
     .ProjectEntryBlog-description{
@@ -67,11 +81,12 @@
     }
 }
 
-.ProjectEntryBlog-link{
+.ProjectEntryBlog-link a{
     cursor: pointer;
     font-size: 1.2rem;
+    color: var(--primary-color);
 }
 
-.ProjectEntryBlog-link:hover{
-    text-decoration: underline;
+.ProjectEntryBlog-link a:hover{
+    color: var(--hover-color);
 }

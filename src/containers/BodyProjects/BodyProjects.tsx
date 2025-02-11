@@ -1,5 +1,6 @@
 import './BodyProjects.css';
-import ProjectEntryBlog from '../../components/ProjectEntryBlog/ProjectEntryBlog';
+import ProjectList from '../ProjectList/ProjectList';
+
 
 function BodyProjects () {
     const ProjectEntry0 = {
@@ -11,11 +12,7 @@ function BodyProjects () {
     };
     return (
         <div className="BodyProjects">
-            <ProjectEntryBlog title={ProjectEntry0.title} description={ProjectEntry0.description} date={ProjectEntry0.date} link={ProjectEntry0.link} image={ProjectEntry0.image}/>
-            <ProjectEntryBlog title={ProjectEntry0.title} description={ProjectEntry0.description} date={ProjectEntry0.date} link={ProjectEntry0.link} image={ProjectEntry0.image}/>
-            <ProjectEntryBlog title={ProjectEntry0.title} description={ProjectEntry0.description} date={ProjectEntry0.date} link={ProjectEntry0.link} image={ProjectEntry0.image}/>
-            <ProjectEntryBlog title={ProjectEntry0.title} description={ProjectEntry0.description} date={ProjectEntry0.date} link={ProjectEntry0.link} image={ProjectEntry0.image}/>
-            <ProjectEntryBlog title={ProjectEntry0.title} description={ProjectEntry0.description} date={ProjectEntry0.date} link={ProjectEntry0.link} image={ProjectEntry0.image}/>
+            <ProjectList />
         </div>
     );
 }
