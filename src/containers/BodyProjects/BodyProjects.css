@@ -1,0 +1,10 @@
+.BodyProjects{
+    height: 100%;
+    width: 90%;
+    background: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}

@@ -1,7 +1,8 @@
+import './ProjectsPage.css';
 import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { RootState } from '../state/store';
-import { Link } from "react-router-dom";
+import BodyProjects from '../containers/BodyProjects/BodyProjects';
 
 function ProjectsPage () {
     //apply theme
@@ -10,10 +11,11 @@ function ProjectsPage () {
       document.documentElement.setAttribute("data-theme", theme);
     }, [theme]);
 
+
+
     return (
-        <div>
-          <h1>Projects Page</h1>
-          <p><Link to="/" >Return</Link></p>
+        <div className='ProjectsPage'>
+          <BodyProjects />
         </div>
     );
 }
