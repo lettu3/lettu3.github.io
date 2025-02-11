@@ -27,13 +27,15 @@ h1{
 :root[data-theme='dark'] {
   --background-color: #101010;
   --text-color: white;
-  --header-bg-color:#101010;
+  --header-bg-color:#080808;
   --body-bg-color:#101010;
   --footer-bg-color:#080808;
   --selected-bg-color: #43736a;
   --hover-color: #43736a;
   --hover-selected-color: #2e504a;
   --selected-text-color: #d9d6d2;
+  --primary-color:#43736e;
+  --border-color:#202020;
 }
 
 
@@ -44,13 +46,15 @@ h1{
 :root[data-theme='light'] {
   --background-color: #d9d6d2;
   --text-color: #101010;
-  --header-bg-color:#d9d6d2;
+  --header-bg-color:#ecebe9;
   --body-bg-color:#d9d6d2;
   --footer-bg-color:#ecebe9;
   --selected-bg-color: #8198a6;
   --hover-color: #8198a6;
   --hover-selected-color: #c4c4c4;
   --selected-text-color: #101010;
+  --primary-color:#43736e;
+  --border-color:#b0aca5;
 }
 
 /*Other things*/

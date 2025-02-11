@@ -13,6 +13,7 @@
     list-style: none;
     z-index: 1000;
     background-color: var(--footer-bg-color);
+    border: 1px solid var(--border-color);
     border-radius: 10%;
     top: 166%;
     padding: 0;
