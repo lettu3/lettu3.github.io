@@ -11,10 +11,13 @@ export default function Theme () {
     const currentScheme = theme === 'light' ? '/schemeLight.svg' : '/schemeDark.svg';
 
     return (
-            <button 
-                onClick={()=> dispatch(toggleTheme())}
-                className='theme'>
-                <img src={currentScheme} className='theme-icon'/>
-            </button>
+            <div className='theme-container'>
+                <button 
+                    onClick={()=> dispatch(toggleTheme())}
+                    className='theme'>
+                    <img src={currentScheme} className='theme-icon'/>
+                </button>
+            </div>
+
     )
 }

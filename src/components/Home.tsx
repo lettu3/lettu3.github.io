@@ -1,5 +1,4 @@
 /* Home.tsx */
-import icon from '/home.svg';
 import './Home.css';
 import { useLocation, useNavigate } from 'react-router-dom';
 
@@ -17,7 +16,7 @@ function Home () {
         <button 
         className='home'
         onClick={handleClick}>
-            <img src={icon} alt="home-icon" className='home-icon' />
+            本
         </button>
     );
 }

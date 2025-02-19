@@ -1,17 +1,18 @@
 .home {
-    width: 35px;
-    height: 35px;
-    border:none;
-    background: none;
-    cursor: pointer;
-    padding: 0;
+    aspect-ratio: 1 / 1;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 25%;
+    line-height: normal;
+    font-size: 3rem;
+    font-weight: bold;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    padding: 4px;
 }
 
-.home-icon{
-    width: 100%;
-    height: 100%;
+.home:hover {
+    cursor: pointer;
 }
