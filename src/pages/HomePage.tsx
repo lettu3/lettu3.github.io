@@ -1,6 +1,6 @@
 import './HomePage.css';
 import { useEffect } from 'react';
-import Header from '../containers/Header/Header';
+import NHeader from '../containers/NewHeader/NHeader';
 import Body from '../containers/Body/Body';
 import Footer from '../containers/Footer/Footer';
 
@@ -16,7 +16,7 @@ function HomePage() {
 
   return (
     <div className='HomePage'>
-    <Header />
+    <NHeader />
     <Body />
     <Footer />
     </div>

@@ -38,11 +38,10 @@ h1{
   --header-bg-color:#080808;
   --body-bg-color:#101010;
   --footer-bg-color:#080808;
-  --selected-bg-color: #43736a;
-  --hover-color: #43736a;
-  --hover-selected-color: #2e504a;
-  --selected-text-color: #d9d6d2;
+  --hover-color: #141414;
   --border-color:#202020;
+  --selected-text-color: #0058ff;
+  --hover-text-color: #5388ec;
 }
 
 
@@ -56,10 +55,8 @@ h1{
   --header-bg-color:#ecebe9;
   --body-bg-color:#d9d6d2;
   --footer-bg-color:#ecebe9;
-  --selected-bg-color: #8198a6;
   --hover-color: #8198a6;
   --hover-selected-color: #c4c4c4;
-  --selected-text-color: #101010;
   --border-color:#b0aca5;
 }
 
@@ -72,11 +69,6 @@ body {
 
 body.transition {
   transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-::selection {
-  background-color: var(--selected-bg-color);
-  color: var(--selected-text-color); 
 }
 
 a {

@@ -10,7 +10,6 @@ export default function Footer () {
                 <div className="footer-contact">
                     <h1>{t('contact')}</h1>
                     <p>{t('personal_email')}</p>
-                    <p>{t('academic_email')}</p>
                 </div>
                 <div className='footer-social'>
                     <h1>{t('social')}</h1>

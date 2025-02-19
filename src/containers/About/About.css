@@ -4,6 +4,7 @@
     justify-content: center;
     width: 100%;
     box-sizing: border-box;
+    margin-top: calc(10%);
 }
 
 
@@ -37,6 +38,7 @@
 }
 
 .about-body{
+  font-family: Arial;
   margin-top: 20px;
   border-radius: 20px;
   box-sizing: border-box;
@@ -46,6 +48,9 @@
 }
 
 @media (min-width: 768px) {
+  .about-container{
+    margin-top: calc(5%);
+  }
   .about-content{
     flex-direction: row;
   }
