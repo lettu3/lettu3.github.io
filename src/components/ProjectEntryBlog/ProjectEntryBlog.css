@@ -88,5 +88,5 @@
 }
 
 .ProjectEntryBlog-link a:hover{
-    color: var(--hover-color);
+    color: var(--hover-text-color);
 }

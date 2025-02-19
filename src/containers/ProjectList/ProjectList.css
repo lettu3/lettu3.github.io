@@ -1,4 +1,6 @@
 .ProjectList{
+    height: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     gap: 20px;
