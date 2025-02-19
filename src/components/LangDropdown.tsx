@@ -1,5 +1,5 @@
 /* LangDropdown.tsx */
-import './Lang.css';
+import './LangDropdown.css';
 import Dropdown from './Dropdown.tsx';
 import {Item} from './Dropdown.tsx';
 import i18next from 'i18next';
@@ -26,7 +26,7 @@ function LangDropDown ({items} : LangDropdownProps) {
         }
     };
     return (
-        <Dropdown items={items} onItemSelect={onItemSelect}/>
+        <Dropdown items={items} onItemSelect={onItemSelect} buttonClassName='lang' imgClassName='lang-icon'/>
     );
 }
 

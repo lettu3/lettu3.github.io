@@ -9,11 +9,13 @@ import { useLocation } from 'react-router-dom';
 type Item = {id: number, title: string};
 
 type DropdownMenuProps = {
+  buttonClassName: string;
+  imgClassName: string;
   items: Item[];
   onItemSelect? : (item: Item) => void; // optional function to handle item selection
 }
 
-export default function DropdownMenu({ items, onItemSelect }: DropdownMenuProps) {
+export default function DropdownMenu({ items, onItemSelect, buttonClassName, imgClassName}: DropdownMenuProps) {
   const isOpen = useSelector((state : RootState) => state.dropdown.isOpen);
   const selectedItem = useSelector((state : RootState) => state.dropdown.selectedItem);
   const theme = useSelector((state: RootState) => state.theme.value);
@@ -49,7 +51,7 @@ export default function DropdownMenu({ items, onItemSelect }: DropdownMenuProps)
 
   return (
     <div className='dropdown-container'>
-      <button onClick={handleToggle} className="lang"><img src={current_icon} className="lang-icon" /></button>
+      <button onClick={handleToggle} className={buttonClassName}><img src={current_icon} className={imgClassName}/></button>
       {isOpen && (
         <ul className='dropdown-menu'>
           {items.length > 0 ? (
