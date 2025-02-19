@@ -21,3 +21,7 @@
     width: 100%;
     height: 100%;
 }
+
+.index a:hover{
+    color: var(--hover-text-color);
+}
