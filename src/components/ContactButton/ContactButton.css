@@ -16,3 +16,9 @@
     background: var(--primary-color-darker);
     cursor: pointer;
 }
+
+@media (max-width: 480px){
+    .contact-button{
+        white-space: nowrap;   
+    }
+}
