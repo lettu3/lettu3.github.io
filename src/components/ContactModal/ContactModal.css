@@ -1,0 +1,38 @@
+.contact-modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.contact-modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--footer-bg-color);
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+}
+
+
+.contact-close-button{
+    background: #ff002b;
+    color: var(--pure-white);
+    border: none;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    width: fit-content;
+}
+
+.contact-close-button:hover{
+    background: #b81430;
+    cursor: pointer;
+    color: var(--pure-white);
+}
