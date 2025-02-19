@@ -6,28 +6,3 @@
     flex-direction: column;
 }
 
-/*BODY*/
-.body-component {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box; 
-    padding: 20px;
-}
-
-.body-column-1 {
-    left: 15%;
-    max-width: 75%;
-    
-}
-
-.body-column-2 {
-    right: 0;
-    max-width: 25%;
-}
-
-.personal {
-    width: 75%;
-    border-radius: 50%;
-}

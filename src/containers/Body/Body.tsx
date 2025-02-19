@@ -15,10 +15,12 @@ export default function Body () {
                 </h1>
             </div>
             <div className="index">
-                <h1>{t('index')}</h1>
-                <p>/<Link to="/about">{t('about')}</Link></p>
-                <p>/<Link to="/projects">{t('projects')}</Link></p>
-                <p>/<Link to="/offtopic">{t('offtopic')}</Link></p>
+                <h1>{t('index').toUpperCase()}</h1>
+                <div>
+                    <p>/<Link to="/about">{t('about')}</Link></p>
+                    <p>/<Link to="/projects">{t('projects')}</Link></p>
+                    <p>/<Link to="/offtopic">{t('offtopic')}</Link></p>
+                </div>
             </div>
         </div>
         </div>
