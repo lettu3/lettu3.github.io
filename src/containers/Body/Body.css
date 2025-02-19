@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     margin-top: calc(10% + 20px);
+    margin-bottom: 10%;
 }
 
 .welcome{
