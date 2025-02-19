@@ -5,5 +5,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: (10% + 20px);
+    margin-top: calc(5%);
+}
+
+.BodyProjects h1{
+    font-size: 3.5rem;
+}
+
+
+@media (max-width: 480px){
+    .BodyProjects{
+        margin-top: calc(10% + 40px);
+    }
 }

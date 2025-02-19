@@ -9,7 +9,7 @@ function About () {
     return (
         <div className="about-container">
             <div className="about-header">
-                <h1>{t('SARASA')}</h1>
+                <h1>{t('about').toUpperCase()}</h1>
             </div>
             <div className='about-content'>
                 <div className="about-pp"><Personal /></div>

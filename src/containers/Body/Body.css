@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: center;
     margin-top: calc(10% + 20px);
-    margin-bottom: 10%;
 }
 
 .welcome{
@@ -15,4 +14,10 @@
 }
 .welcome h1{
     font-size: 4rem;
+}
+
+@media (max-width: 480px) {
+    .body-component{
+        margin-bottom: calc(10%);
+    }
 }
