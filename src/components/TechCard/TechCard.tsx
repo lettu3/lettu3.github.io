@@ -16,13 +16,33 @@ function TechCard ({title}: TechCardProps) {
 
     const imgPath = images[`/src/assets/${imgName}`]?.default;
 
+    //probably the worst thing i've ever wrotten
+    let titleN : string;
+    switch (title) {
+        case 'arm':
+            titleN = 'ARMv8';
+            break;
+        case 'Cpp':
+            titleN = 'C++';
+            break;
+        case 'Clang':
+            titleN = 'C';
+            break;
+        case 'ApacheSpark':
+            titleN = 'Apache Spark';
+            break;
+        default:
+            titleN = title;
+            break;
+    }
+
     return (
         <div className='tech-card'>
             <div className='tech-card-logo'>
                 <img src={imgPath} />
             </div>
             <div className='tech-card-title'>
-                {title}
+                {titleN}
             </div>
         </div>
     );
