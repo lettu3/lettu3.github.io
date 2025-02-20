@@ -19,7 +19,7 @@ import NotFoundPage from './pages/NotFoundPage.tsx'
 import TestPage from './pages/TestPage.tsx';
 import { Provider } from 'react-redux'
 import {store} from './state/store.ts'
-
+import WindowSizeListener from './utils/WindowSizeListener.tsx';
 
 
 
@@ -49,6 +49,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <Provider store={store}>
+    <WindowSizeListener/>
     <RouterProvider router={router}/>
   </Provider>
 );
