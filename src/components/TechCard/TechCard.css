@@ -7,6 +7,7 @@
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
+    user-select: none;
 }
 
 .tech-card-logo{
