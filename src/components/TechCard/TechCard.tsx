@@ -12,7 +12,7 @@ function TechCard ({title}: TechCardProps) {
 
     const imgName = theme === 'light' ? `${title.toLowerCase()}Light.svg` : `${title.toLowerCase()}Dark.svg`;
 
-    const images = import.meta.glob('/src/assets/*.svg', { eager: true });
+    const images = import.meta.glob('/src/assets/*.svg', { eager: true }) as Record<string, { default: string }>;
 
     const imgPath = images[`/src/assets/${imgName}`]?.default;
 
