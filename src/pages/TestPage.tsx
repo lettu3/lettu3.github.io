@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { RootState } from "../state/store";
 
-import NHeader from '../containers/NewHeader/NHeader';
+import TechContainer from '../containers/TechContainer/TechContainer';
 
 function TestPage () {
     //apply theme
@@ -14,7 +14,7 @@ function TestPage () {
 
     return (
         <div className="TestPage">
-            <NHeader />
+            <TechContainer/>
         </div>
     );
 }
