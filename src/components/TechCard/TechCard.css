@@ -1,0 +1,32 @@
+.tech-card{
+    display: flex;
+    padding: 12px;
+    gap: 12px;
+    background: var(--footer-bg-color);
+    border-radius: 12px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.tech-card-logo{
+    aspect-ratio: 1/1;
+    height: calc(15px + 0.690625vh);
+}
+.tech-card-logo img{
+    display: flex;
+    height: 100%;
+}
+.tech-card-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .tech-card{
+        transition: transform 0.3s ease-in-out;
+    }
+    .tech-card:hover{
+        transform: scale(1.1);
+    }
+}
