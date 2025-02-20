@@ -4,13 +4,13 @@
     align-items: center;
     width: 100%;
     gap: 12px;
-    padding: 2%;
+    padding: 2%;;
+    flex-wrap: wrap;
     box-sizing: border-box;
 }
 
 @media (min-width: 768px) {
     .tech-container{
         flex-direction: row;
-        flex-wrap: wrap;
     }
 }
