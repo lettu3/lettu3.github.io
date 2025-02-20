@@ -17,7 +17,7 @@ function About () {
                 <div className="about-body"><p>{t('lorem')}</p></div>
             </section>
             <div className="about-tech-header">
-                <h1>MY TECH STACK</h1>
+                <h1>{t('my tech stack').toUpperCase()}</h1>
             </div>
             <section className="about-tech">
                 <TechContainer/>
