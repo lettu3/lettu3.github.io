@@ -30,3 +30,12 @@
         transform: scale(1.1);
     }
 }
+
+@media (max-width: 768px){
+    .tech-card-title{
+        font-size: 1rem;
+    }
+    .tech-card-logo{
+        height: calc(15px + 0.390625vh);
+    }
+}
