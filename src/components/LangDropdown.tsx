@@ -4,11 +4,15 @@ import Dropdown from './Dropdown.tsx';
 import {Item} from './Dropdown.tsx';
 import i18next from 'i18next';
 
-type LangDropdownProps = {
-    items: Item[];
-};
 
-function LangDropDown ({items} : LangDropdownProps) {
+function LangDropDown () {
+
+    const Languages : Item[] = [
+        {id : 1, title : "[EN] - English"},
+        {id : 2, title : "[ES] - Espanol"},
+        {id : 3, title : "[JP] - 日本語"}
+    ];
+
     const onItemSelect = (item: Item) => {
         switch (item.title) {
             case "[EN] - English":
@@ -25,8 +29,9 @@ function LangDropDown ({items} : LangDropdownProps) {
                 break;
         }
     };
+    
     return (
-        <Dropdown items={items} onItemSelect={onItemSelect} buttonClassName='lang' imgClassName='lang-icon'/>
+        <Dropdown items={Languages} onItemSelect={onItemSelect} buttonClassName='lang' imgClassName='lang-icon'/>
     );
 }
 
