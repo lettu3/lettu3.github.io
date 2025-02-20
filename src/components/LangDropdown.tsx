@@ -29,9 +29,14 @@ function LangDropDown () {
                 break;
         }
     };
-    
+
     return (
-        <Dropdown items={Languages} onItemSelect={onItemSelect} buttonClassName='lang' imgClassName='lang-icon'/>
+        <Dropdown 
+            items={Languages} 
+            onItemSelect={onItemSelect} 
+            buttonClassName='lang'
+            imgTitle='lang' 
+            imgClassName='lang-icon'/>
     );
 }
 

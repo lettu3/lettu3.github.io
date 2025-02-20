@@ -10,25 +10,21 @@ type Item = {id: number, title: string};
 
 type DropdownMenuProps = {
   buttonClassName: string;
+  imgTitle: string;
   imgClassName: string;
   items: Item[];
+  textButton? : string;
   onItemSelect? : (item: Item) => void; // optional function to handle item selection
 }
 
-export default function DropdownMenu({ items, onItemSelect, buttonClassName, imgClassName}: DropdownMenuProps) {
+export default function DropdownMenu({ items, onItemSelect, buttonClassName, imgTitle, imgClassName}: DropdownMenuProps) {
   const isOpen = useSelector((state : RootState) => state.dropdown.isOpen);
   const selectedItem = useSelector((state : RootState) => state.dropdown.selectedItem);
   const theme = useSelector((state: RootState) => state.theme.value);
   const dispatch = useDispatch();
   const location = useLocation();
 
-  const [current_icon, setCurrentIcon] = useState<string>(
-    theme === 'light' ? '/langLight.svg' : '/langDark.svg'
-  );
-  useEffect(() => {
-    const icon = theme === 'light' ? '/langLight.svg' : '/langDark.svg';
-    setCurrentIcon(icon);
-  }, [theme]);
+  const current_icon = theme === 'light' ? `./${imgTitle}Light.svg` : `./${imgTitle}Dark.svg`;
 
 
   const handleToggle = () => {
