@@ -46,4 +46,21 @@
     .nheader-column2{
         margin-left: auto;
     }
+
+    .nheader-column3 > .burger{
+        display: none;
+    }
+}
+
+
+@media (max-width: 480px){
+    .nheader-column2 > .contact-button{
+        display: none;
+    }
+    .nheader-column3> .theme-container{
+        display: none;
+    }
+    .nheader-column3> .dropdown-container{
+        display: none;
+    } 
 }
