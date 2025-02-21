@@ -9,7 +9,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../../state/store';
 import { toggleBurger } from '../../state/burger/burgerSlice';
 import ContactButton from '../ContactButton/ContactButton';
-import ThemeBurger from '../ThemeBurger/ThemeBurger';
 import LangDropDown from '../LangDropdown';
 
 
