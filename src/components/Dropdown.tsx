@@ -1,6 +1,6 @@
 /* Dropdown.tsx */
 import './Dropdown.css';
-import { useEffect, useState} from 'react';
+import { useEffect} from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import { toggleDropdown, selectItem } from "../state/dropdown/dropdownSlice";
 import { RootState } from "../state/store";
