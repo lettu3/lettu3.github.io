@@ -1,11 +1,25 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+const getTheme = () : string => {
+    let res : string = "dark";
+    try {
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+        res = prefersDark.matches ? "dark" : "light";
+    }
+    catch {
+        console.log("Error getting theme");
+    }
+    finally {
+        return res;
+    }
+}
+
 interface ThemeState {
     value: string;
 }
 
 const initialState : ThemeState = {
-    value: "dark",
+    value: getTheme(),
 }
 
 const themeSlice = createSlice({
