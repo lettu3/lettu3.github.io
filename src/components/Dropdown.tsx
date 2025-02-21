@@ -17,7 +17,7 @@ type DropdownMenuProps = {
   onItemSelect? : (item: Item) => void; // optional function to handle item selection
 }
 
-export default function DropdownMenu({ items, onItemSelect, buttonClassName, imgTitle, imgClassName}: DropdownMenuProps) {
+export default function DropdownMenu({ items, buttonClassName, imgTitle, imgClassName, textButton, onItemSelect}: DropdownMenuProps) {
   const isOpen = useSelector((state : RootState) => state.dropdown.isOpen);
   const selectedItem = useSelector((state : RootState) => state.dropdown.selectedItem);
   const theme = useSelector((state: RootState) => state.theme.value);
@@ -47,7 +47,10 @@ export default function DropdownMenu({ items, onItemSelect, buttonClassName, img
 
   return (
     <div className='dropdown-container'>
-      <button onClick={handleToggle} className={buttonClassName}><img src={current_icon} className={imgClassName}/></button>
+      <button onClick={handleToggle} className={buttonClassName}>
+        {textButton? (<span>{textButton}</span>) : null}
+        <img src={current_icon} className={imgClassName}/>
+      </button>
       {isOpen && (
         <ul className='dropdown-menu'>
           {items.length > 0 ? (
