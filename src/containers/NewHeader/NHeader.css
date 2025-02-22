@@ -64,3 +64,13 @@
         display: none;
     } 
 }
+
+@media (min-width: 1080px) {
+    .nheader-component{
+        height: 7%;
+        width: 95%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+}
