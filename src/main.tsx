@@ -38,10 +38,6 @@ const router = createBrowserRouter([
     element: <ProjectsPage />
   },
   {
-    path: '/offtopic',
-    element: <OfftopicPage/>
-  },
-  {
     path: '/test',
     element: <TestPage/>
   },

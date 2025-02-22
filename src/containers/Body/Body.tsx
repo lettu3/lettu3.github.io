@@ -19,7 +19,7 @@ export default function Body () {
                 <div>
                     <p>/<Link to="/about">{t('about')}</Link></p>
                     <p>/<Link to="/projects">{t('projects')}</Link></p>
-                    <p>/<Link to="/offtopic">{t('offtopic')}</Link></p>
+                    <p>/<a href="https://lettu3.github.io/offtopic">{t('offtopic')}</a></p>
                 </div>
             </div>
         </div>
