@@ -14,7 +14,6 @@ import './utils/i18n/index.ts'
 import HomePage from './pages/HomePage.tsx'
 import AboutPage from './pages/AboutPage.tsx'
 import ProjectsPage from './pages/ProjectsPage.tsx'
-import OfftopicPage from './pages/OfftopicPage.tsx'
 import NotFoundPage from './pages/NotFoundPage.tsx'
 import TestPage from './pages/TestPage.tsx';
 import { Provider } from 'react-redux'
