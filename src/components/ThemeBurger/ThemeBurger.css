@@ -1,0 +1,16 @@
+.theme-burger{
+    background: yellowgreen;
+}
+
+.theme-burger-button{
+    width: 100%;
+}
+
+
+.theme-burger-button img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.rotated {
+    transform: rotate(180deg);
+}
