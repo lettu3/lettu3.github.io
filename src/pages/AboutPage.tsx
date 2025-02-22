@@ -13,7 +13,7 @@ function AboutPage () {
     }, [theme]);
 
     return (
-        <div>
+        <div className='AboutPage'>
             <NHeader/>
             <About/>
             <Footer/>
