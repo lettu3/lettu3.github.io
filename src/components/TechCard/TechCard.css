@@ -8,6 +8,7 @@
     align-items: center;
     box-sizing: border-box;
     user-select: none;
+    transition: background-color 0.5 ease-in-out;
 }
 
 .tech-card-logo{
