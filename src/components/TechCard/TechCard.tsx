@@ -5,11 +5,10 @@ import { RootState } from '../../state/store';
 
 type TechCardProps = {
     title: string;
-    hoverColor: string;
 };
 
 
-function TechCard ({title, hoverColor}: TechCardProps) {
+function TechCard ({title}: TechCardProps) {
     const theme = useSelector((state: RootState) => state.theme.value);
     const [isHovered, setIsHovered] = useState(false);
 
@@ -46,8 +45,6 @@ function TechCard ({title, hoverColor}: TechCardProps) {
 
     return (
         <div className='tech-card' 
-             onMouseEnter={handleMouse} onMouseLeave={handleMouse}
-             style={{ backgroundColor: isHovered ? `#${hoverColor}` : 'var(--footer-bg-color)' }}
         >
             <div className='tech-card-logo'>
                 <img src={imgPath} />
