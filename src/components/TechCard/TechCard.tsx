@@ -10,7 +10,6 @@ type TechCardProps = {
 
 function TechCard ({title}: TechCardProps) {
     const theme = useSelector((state: RootState) => state.theme.value);
-    const [isHovered, setIsHovered] = useState(false);
 
     const imgName = theme === 'light' ? `${title.toLowerCase()}Light.svg` : `${title.toLowerCase()}Dark.svg`;
 
@@ -38,7 +37,7 @@ function TechCard ({title}: TechCardProps) {
             break;
     }
 
-    
+
 
     return (
         <div className='tech-card' 
@@ -47,7 +46,7 @@ function TechCard ({title}: TechCardProps) {
                 <img src={imgPath} />
             </div>
             <div className='tech-card-title'>
-                {titleN}{isHovered}
+                {titleN}
             </div>
         </div>
     );
