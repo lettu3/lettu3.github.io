@@ -62,6 +62,9 @@
     }
     .nheader-column3> .dropdown-container{
         display: none;
+    }
+    .nheader-column3> .github-container{
+        display: none;
     } 
 }
 

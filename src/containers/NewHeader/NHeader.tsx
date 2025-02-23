@@ -3,6 +3,7 @@ import ContactButton from '../../components/ContactButton/ContactButton';
 import Home from '../../components/Home';
 import LangDropDown from '../../components/LangDropdown';
 import Theme from '../../components/Theme';
+import GithubButton from '../../components/GithubButton/GithubButton';
 import './NHeader.css';
 
 function NHeader (){
@@ -18,6 +19,7 @@ function NHeader (){
             <div className='nheader-column3'>
                 <Theme/>
                 <LangDropDown/>
+                <GithubButton/>
                 <Burger/>
             </div>
         </div>
