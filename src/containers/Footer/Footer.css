@@ -24,6 +24,15 @@
 }
 
 
+.social-link{
+    display: flex;
+    gap: 4px;
+}
+
+.social-link img{
+    height: 1rem;
+}
+
 @media (min-width: 768px){
     .footer-columns{
         flex-direction: row;
