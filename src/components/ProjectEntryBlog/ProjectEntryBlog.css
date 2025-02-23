@@ -67,9 +67,6 @@
     transition: transform 0.3s ease;
 }
 
-.ProjectEntryBlog-image:hover{
-    transform: scale(1.05);
-}
 
 .ProjectEntryBlog-description{
     margin-top: 4%;
