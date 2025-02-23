@@ -38,10 +38,7 @@ function TechCard ({title}: TechCardProps) {
             break;
     }
 
-    const handleMouse = () => {
-        setIsHovered(!isHovered);
-        console.log("mouse event");
-    };
+    
 
     return (
         <div className='tech-card' 
