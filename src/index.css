@@ -34,9 +34,12 @@ h1{
 /*Root*/
 :root[data-theme='dark'] {
   --background-color: #101010;
+  --inverse-background-color: #d9d6d2;
   --text-color: white;
+  --inverse-text-color:#101010;
   --header-bg-color:#080808;
   --header-ts-color: rgba(3,3,3,0.9);
+  --inverse-header-color: #ecebe9;
   --body-bg-color:#101010;
   --footer-bg-color:#080808;
   --hover-color: #141414;
@@ -52,9 +55,13 @@ h1{
 /*Root*/
 :root[data-theme='light'] {
   --background-color: #d9d6d2;
+  --inverse-background-color: #101010;
   --text-color: #101010;
+  --inverse-text-color: white;
   --header-bg-color:#ecebe9;
+  --header-ts-color: rgba(236,235,233,0.9);
   --body-bg-color:#d9d6d2;
+  --inverse-header-color: #080808;
   --footer-bg-color:#ecebe9;
   --hover-color: #c0bdb8;
   --hover-selected-color: #c4c4c4;
