@@ -68,6 +68,13 @@
     height: calc(2rem + 20px);
 }
 
+.burger-menu-bottom-buttons > .github-container:hover{
+    background: var(--inverse-hover-color);
+}
+.burger-menu-bottom-buttons > .github-container:active{
+    background: var(--inverse-hover-color);
+}
+
 .burger-menu-bottom-buttons > .github-container > .github-button{
     all: unset;
     display: flex;
@@ -105,6 +112,13 @@
     padding: 10px;
     justify-content: center;
     align-items: center;
+}
+
+.burger-menu-bottom-buttons > .theme-container:hover{
+    background: var(--inverse-hover-color);
+}
+.burger-menu-bottom-buttons > .theme-container:active{
+    background: var(--inverse-hover-color);
 }
 
 .burger-menu-bottom-buttons > .theme-container > .theme> .theme-icon{
