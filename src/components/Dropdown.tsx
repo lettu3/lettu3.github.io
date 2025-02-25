@@ -1,8 +1,7 @@
 /* Dropdown.tsx */
 import './Dropdown.css';
-import { useEffect} from 'react';
-import { useSelector, useDispatch } from "react-redux";
-import { toggleDropdown, selectItem } from "../state/dropdown/dropdownSlice";
+import { useEffect, useState} from 'react';
+import { useSelector} from "react-redux";
 import { RootState } from "../state/store";
 import { useLocation } from 'react-router-dom';
 
@@ -18,22 +17,20 @@ type DropdownMenuProps = {
 }
 
 export default function DropdownMenu({ items, buttonClassName, imgTitle, imgClassName, textButton, onItemSelect}: DropdownMenuProps) {
-  const isOpen = useSelector((state : RootState) => state.dropdown.isOpen);
-  const selectedItem = useSelector((state : RootState) => state.dropdown.selectedItem);
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedItem, setSelectedItem] = useState(1);
   const theme = useSelector((state: RootState) => state.theme.value);
-  const dispatch = useDispatch();
   const location = useLocation();
 
   const current_icon = theme === 'light' ? `./${imgTitle}Light.svg` : `./${imgTitle}Dark.svg`;
 
-
   const handleToggle = () => {
-    dispatch(toggleDropdown(!isOpen));
+    setIsOpen(!isOpen);
   };
 
   const handleSelect = (item : Item) => {
     console.log('selected item:', item);
-    dispatch(selectItem(item.id));
+    setSelectedItem(item.id);
     if (onItemSelect) {
       onItemSelect(item);
     }
@@ -41,7 +38,7 @@ export default function DropdownMenu({ items, buttonClassName, imgTitle, imgClas
 
   useEffect(() => {
     if (isOpen) {
-      dispatch(toggleDropdown(false));
+      setIsOpen(false);
     }
   }, [location.pathname]);
 

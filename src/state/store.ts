@@ -2,7 +2,6 @@ import { configureStore } from "@reduxjs/toolkit";
 import windowReducer from "./window/windowSlice";   
 import langReducer from "./lang/langSlice";
 import themeReducer from "./theme/themeSlice";
-import dropdownReducer from "./dropdown/dropdownSlice";
 import burgerReducer from "./burger/burgerSlice";
 
 export const store = configureStore({
@@ -10,7 +9,6 @@ export const store = configureStore({
         window: windowReducer,
         lang : langReducer,
         theme: themeReducer,
-        dropdown: dropdownReducer,
         burger: burgerReducer,
     },
 })
