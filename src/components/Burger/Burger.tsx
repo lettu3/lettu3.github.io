@@ -5,6 +5,7 @@ because burger will fullfill the screen, so you won't be able to change the loca
 */
 
 import './Burger.css';
+import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../../state/store';
 import { toggleBurger } from '../../state/burger/burgerSlice';
@@ -12,12 +13,13 @@ import ContactButton from '../ContactButton/ContactButton';
 import LangDropDown from '../LangDropdown';
 import GithubButton from '../GithubButton/GithubButton';
 import Theme from '../Theme';
+import { useLocation } from 'react-router-dom';
 
 
 function Burger (){
     const isOpen = useSelector((state: RootState) => state.burger.isOpen);
     const theme = useSelector((state: RootState) => state.theme.value);
-
+    const location = useLocation();
     const dispatch = useDispatch();
 
     const burgerPath = theme === 'light' ? './burgerLight.svg' : './burgerDark.svg';
@@ -25,6 +27,12 @@ function Burger (){
     const handleToggle = () => {
         dispatch(toggleBurger(!isOpen));
     }
+
+    useEffect(() => {
+        if (isOpen) {
+          dispatch(toggleBurger(false));
+        }
+    }, [location.pathname]);
 
     return (
         <div className='burger'>
