@@ -10,6 +10,8 @@ import { RootState } from '../../state/store';
 import { toggleBurger } from '../../state/burger/burgerSlice';
 import ContactButton from '../ContactButton/ContactButton';
 import LangDropDown from '../LangDropdown';
+import GithubButton from '../GithubButton/GithubButton';
+import Theme from '../Theme';
 
 
 function Burger (){
@@ -29,8 +31,16 @@ function Burger (){
             <button className='burger-button' onClick={handleToggle}><img src={burgerPath} className='burger-icon'/></button>
             {isOpen && 
             <div className='burger-menu'>
-                <div className='burger-menu-top'><LangDropDown /></div>
-                <div className='burger-menu-bottom'><ContactButton /></div>
+                <div className='burger-menu-top'>
+                    <LangDropDown />
+                </div>
+                <div className='burger-menu-bottom'>
+                    <div className='burger-menu-bottom-buttons'>
+                       <GithubButton/>
+                       <Theme />
+                    </div>
+                    <ContactButton />
+                </div>
 
                 
                 

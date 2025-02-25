@@ -21,6 +21,8 @@
 
 .burger-menu {
     background: var(--header-bg-color);
+
+
     border-radius: 12px;
 
     height: 75vh;  /* DONT KNOW WHY, but it works */
@@ -35,6 +37,7 @@
     align-items: center;
     padding: 12px;
     box-sizing: border-box;
+    z-index: 3000;
 }
 
 .burger-menu-top{
@@ -47,6 +50,69 @@
 
 .burger-menu button{
     height: fit-content;
+}
+
+
+.burger-menu-bottom-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    margin-bottom: 12px;
+    gap: 12px
+}
+
+.burger-menu-bottom-buttons > .github-container{
+    background: var(--inverse-header-color);
+    border-radius: 10px;
+    width: 50%;
+    height: calc(2rem + 20px);
+}
+
+.burger-menu-bottom-buttons > .github-container > .github-button{
+    all: unset;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--inverse-text-color);
+}
+
+
+
+.burger-menu-bottom-buttons > .github-container > .github-button > .github-button-img{
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.5rem;
+}
+
+.burger-menu-bottom-buttons > .theme-container{
+    all: unset;
+    background: var(--inverse-header-color);
+    border-radius: 10px;
+    width: 50%;
+    height: calc(2rem + 20px);
+}
+
+.burger-menu-bottom-buttons > .theme-container > .theme{
+    all: unset;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger-menu-bottom-buttons > .theme-container > .theme> .theme-icon{
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
 }
 
 .burger-menu-top > .dropdown-container{
