@@ -6,9 +6,18 @@ import { toggleTheme } from "../state/theme/themeSlice";
 
 export default function Theme () {
     const theme = useSelector((state: RootState) => state.theme.value);
+    const {width} = useSelector((state: RootState) => state.window);
     const dispatch = useDispatch();
+    
+    const isMobile = width < 480;
 
-    const currentScheme = theme === 'light' ? '/schemeLight.svg' : '/schemeDark.svg';
+    let currentScheme = theme === 'light' ? '/schemeLight.svg' : '/schemeDark.svg';
+    if (isMobile && (theme === 'light')) {
+        currentScheme = '/schemeDark.svg';
+    }
+    else if (isMobile && (theme === 'dark')) {
+        currentScheme = '/schemeLight.svg';
+    }
 
     return (
             <div className='theme-container'>
