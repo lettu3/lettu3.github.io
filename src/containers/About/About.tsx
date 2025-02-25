@@ -9,18 +9,22 @@ function About () {
 
     return (
         <div className="about-container">
-            <div className="about-header">
-                <h1>{t('about').toUpperCase()}</h1>
-            </div>
-            <section className='about-content'>
-                <div className="about-pp"><Personal /></div>
-                <div className="about-body"><p>{t('lorem')}</p></div>
+            <section className='content'>
+                <div className="about-header">
+                    <h1>{t('about').toUpperCase()}</h1>
+                </div>
+                <div className='about-content'>
+                    <div className="about-pp"><Personal /></div>
+                    <div className="about-body"><p>{t('lorem')}</p></div>
+                </div>
             </section>
-            <div className="about-tech-header">
-                <h1>{t('my tech stack').toUpperCase()}</h1>
-            </div>
-            <section className="about-tech">
-                <TechContainer/>
+            <section className='tech'>
+                <div className="about-tech-header">
+                    <h1>{t('my tech stack').toUpperCase()}</h1>
+                </div>
+                <div className="about-tech">
+                    <TechContainer/>
+                </div>
             </section>
         </div>
     );
