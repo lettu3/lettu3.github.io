@@ -36,6 +36,7 @@ h1{
   --background-color: #101010;
   --text-color: white;
   --header-bg-color:#080808;
+  --header-ts-color: rgba(3,3,3,0.9);
   --body-bg-color:#101010;
   --footer-bg-color:#080808;
   --hover-color: #141414;
