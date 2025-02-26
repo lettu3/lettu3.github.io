@@ -9,8 +9,8 @@ type Item = {id: number, title: string};
 
 type DropdownMenuProps = {
   buttonClassName: string;
-  imgTitle: string;
-  imgClassName: string;
+  imgTitle?: string;
+  imgClassName?: string;
   items: Item[];
   textButton? : string;
   onItemSelect? : (item: Item) => void; // optional function to handle item selection
@@ -21,8 +21,8 @@ export default function DropdownMenu({ items, buttonClassName, imgTitle, imgClas
   const [selectedItem, setSelectedItem] = useState(1);
   const theme = useSelector((state: RootState) => state.theme.value);
   const location = useLocation();
-
-  const current_icon = theme === 'light' ? `./${imgTitle}Light.svg` : `./${imgTitle}Dark.svg`;
+  
+  const current_icon = imgTitle ? `./${imgTitle}${theme === 'light' ? 'Light' : 'Dark'}.svg` : undefined;
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
@@ -46,7 +46,7 @@ export default function DropdownMenu({ items, buttonClassName, imgTitle, imgClas
     <div className='dropdown-container'>
       <button onClick={handleToggle} className={buttonClassName}>
         {textButton? (<span>{textButton}</span>) : null}
-        <img src={current_icon} className={imgClassName}/>
+        {imgTitle? (<img src={current_icon} className={imgClassName}/>) : null}
       </button>
       {isOpen && (
         <ul className='dropdown-menu'>
