@@ -9,7 +9,7 @@
     flex-wrap: wrap;
     flex-shrink: 0;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 48px;
     border-top: 1px var(--border-color) solid;
 }
 
