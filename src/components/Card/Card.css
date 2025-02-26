@@ -1,0 +1,44 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background: var(--footer-bg-color);
+    font-size: 1rem;
+    padding: 24px;
+    justify-content: space-between;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.card-header{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-body{
+    display: flex;
+    box-sizing: border-box;
+
+}
+
+.card-footer{
+    display: flex;
+    width: 100%;
+    gap: 12px;
+}
+
+
+@media (max-width: 480px){
+    .card-body{
+        margin-bottom: 24px;
+        overflow: hidden;
+    }
+
+    .card-footer{
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+}
