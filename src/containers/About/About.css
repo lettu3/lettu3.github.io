@@ -47,6 +47,14 @@
   background: var(--footer-bg-color);
 }
 
+.tech{
+  background: var(--inverse-background-color);
+  color: var(--inverse-text-color);
+  border-radius: 12px;
+  width: calc(100% - 24px);
+  justify-self: center;
+  align-self: center;
+}
 
 .about-tech-header{
   width: 100%;
@@ -75,6 +83,10 @@
     flex: 2;
     margin: 40px;
     font-size: 1.5rem;
+  }
+
+  .tech{
+    width: calc(100% - 24px - 80px);
   }
 }
 

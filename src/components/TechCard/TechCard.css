@@ -2,7 +2,8 @@
     display: flex;
     padding: 12px;
     gap: 12px;
-    background: var(--footer-bg-color);
+    background: var(--header-bg-color);
+    color: var(--text-color);
     border-radius: 12px;
     justify-content: space-between;
     align-items: center;
