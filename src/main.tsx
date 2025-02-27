@@ -7,45 +7,34 @@
 */
 
 
-import ReactDOM  from 'react-dom/client'
-import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+
 import './index.css'
 import './utils/i18n/index.ts'
+import { Provider } from 'react-redux'
+import {store} from './state/store.ts'
+import { BrowserRouter } from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
+import ReactDOM  from 'react-dom/client'
 import HomePage from './pages/HomePage.tsx'
 import AboutPage from './pages/AboutPage.tsx'
 import ProjectsPage from './pages/ProjectsPage.tsx'
-import NotFoundPage from './pages/NotFoundPage.tsx'
 import TestPage from './pages/TestPage.tsx';
-import { Provider } from 'react-redux'
-import {store} from './state/store.ts'
 import WindowSizeListener from './utils/WindowSizeListener.tsx';
+import WindowScroller from './utils/WindowScroller.tsx';
 
-
-
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <HomePage />,
-    errorElement: <NotFoundPage/>
-  },
-  {
-    path: '/about',
-    element: <AboutPage />
-  },
-  {
-    path:'/projects',
-    element: <ProjectsPage />
-  },
-  {
-    path: '/test',
-    element: <TestPage/>
-  },
-]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <Provider store={store}>
     <WindowSizeListener/>
-    <RouterProvider router={router}/>
+    <BrowserRouter>
+      <WindowScroller/>
+      <Routes>
+        <Route path='/' element={<HomePage/>}/>
+        <Route path='/about' element={<AboutPage/>}/>
+        <Route path= '/projects' element={<ProjectsPage/>}/>
+        <Route path='/test' element={<TestPage/>}/>
+      </Routes>
+    </BrowserRouter>
   </Provider>
 );
 
