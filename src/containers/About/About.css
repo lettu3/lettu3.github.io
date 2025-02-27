@@ -5,6 +5,7 @@
     width: 100%;
     box-sizing: border-box;
     margin-top: calc(10%);
+    gap: 46px;
 }
 
 .about-header{
@@ -68,6 +69,27 @@
 }
 
 
+.links{
+  width: calc(100% - 24px);
+  justify-self: center;
+  align-self: center;
+
+}
+
+.links-cards{
+  display: flex;
+  gap: 48px;
+  padding: 24px;
+
+}
+
+.links-cards > .card{
+  display: flex;
+  height: 33vh;
+  border-radius: 12px;
+  width: 50%;
+}
+
 @media (min-width: 768px) {
   .about-container{
     margin-top: calc(5%);
@@ -88,11 +110,33 @@
   .tech{
     width: calc(100% - 24px - 80px);
   }
+
+  .links{
+    width: calc(100% - 24px - 80px);
+  }
+
+  .links-cards{
+    padding: 0;
+  }
 }
 
 
 @media (max-width: 480px) {
   .about-container{
     margin-top: 100px;
+  }
+
+  .links-cards{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .links-cards > .card{
+    width: 100%;
+  } 
+
+  .card> .card-footer> .resume-button-container{
+    width: 100%;
   }
 }

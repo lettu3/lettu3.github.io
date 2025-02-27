@@ -3,6 +3,9 @@ import './About.css';
 import { useTranslation } from "react-i18next";
 import Personal from "../../components/Personal";
 import TechContainer from '../TechContainer/TechContainer';
+import Card from '../../components/Card/Card';
+import ResumeButton from '../../components/ResumeButton/ResumeButton';
+import LinkerButton from '../../components/LinkerButton/LinkerButton';
 
 function About () {
     const  {t} = useTranslation();
@@ -24,6 +27,17 @@ function About () {
                 </div>
                 <div className="about-tech">
                     <TechContainer/>
+                </div>
+            </section>
+            <section className='links'>
+                <div className ='links-cards'>
+                    <Card header={t('curriculum')} body={t('curriculum-body')}>
+                        <ResumeButton title='[ES] - Español'/>
+                        <ResumeButton title='[EN] - English'/>
+                    </Card>
+                    <Card header={t('projects')} body={t('projects-body')}>
+                        <LinkerButton linkto='/projects' title={t('projects')}/>
+                    </Card>
                 </div>
             </section>
         </div>
