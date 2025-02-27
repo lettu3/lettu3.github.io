@@ -98,3 +98,7 @@ a {
 :root[data-theme="light"] .theme-icon {
   color: var(--text-color); /* Color para el tema claro */
 }
+
+.testing-mode, .testing-mode * {
+  all: unset;
+}
