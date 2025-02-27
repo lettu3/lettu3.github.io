@@ -1,11 +1,15 @@
 import './ProjectsPage.css'
-import BodyProjects from '../../containers/BodyProjects/BodyProjects';
+import { useTranslation } from 'react-i18next';
+
+import ProjectList from '../../containers/ProjectList/ProjectList';
 
 
 function ProjectsPage () {
+  const {t} = useTranslation();
     return (
-        <div className='ProjectsPage'>
-          <BodyProjects />
+        <div className='projects-page'>
+            <h1>{t('projects').toUpperCase()}</h1>
+            <ProjectList />
         </div>
     );
 }
