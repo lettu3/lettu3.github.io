@@ -18,7 +18,7 @@
     background-color: var(--footer-bg-color);
     border: 1px solid var(--border-color);
     border-radius: 10%;
-    top: 166%;
+    top: calc(100% - 8px + 20px);
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
