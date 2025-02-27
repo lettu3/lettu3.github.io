@@ -1,0 +1,142 @@
+.about-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: calc(10%);
+    gap: 46px;
+}
+
+.about-header{
+  width: 100%;
+  text-align: center;
+}
+
+.about-header h1{
+    font-size: 3.2rem;
+}
+
+.about-content{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 12px;
+}
+
+
+.about-pp {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.about-pp img{
+  width: 100%;
+  height: auto;
+}
+
+.about-body{
+  font-family: Arial;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 2%;
+  width: 100%;
+  background: var(--footer-bg-color);
+}
+
+.tech{
+  background: var(--inverse-background-color);
+  color: var(--inverse-text-color);
+  border-radius: 12px;
+  width: calc(100% - 24px);
+  justify-self: center;
+  align-self: center;
+}
+
+.about-tech-header{
+  width: 100%;
+  text-align: center;
+}
+
+.about-tech{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+}
+
+
+.links{
+  width: calc(100% - 24px);
+  justify-self: center;
+  align-self: center;
+
+}
+
+.links-cards{
+  display: flex;
+  gap: 48px;
+  padding: 24px;
+
+}
+
+.links-cards > .card{
+  display: flex;
+  height: 33vh;
+  border-radius: 12px;
+  width: 50%;
+}
+
+@media (min-width: 768px) {
+  .about-page{
+    margin-top: calc(5%);
+  }
+  .about-content{
+    flex-direction: row;
+  }
+  .about-pp{
+    flex: 1;
+    margin: 40px;
+  }
+  .about-body{
+    flex: 2;
+    margin: 40px;
+    font-size: 1.5rem;
+  }
+
+  .tech{
+    width: calc(100% - 24px - 80px);
+  }
+
+  .links{
+    width: calc(100% - 24px - 80px);
+  }
+
+  .links-cards{
+    padding: 0;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .about-page{
+    margin-top: 100px;
+  }
+
+  .links-cards{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .links-cards > .card{
+    width: 100%;
+  } 
+
+  .card> .card-footer> .resume-button-container{
+    width: 100%;
+  }
+}
