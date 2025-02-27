@@ -33,7 +33,7 @@
 }
 
 @media (max-width: 480px) {
-    .body-component{
+    .home-page{
         padding-top: calc(20%);
         margin-bottom: calc(10%);
     }
