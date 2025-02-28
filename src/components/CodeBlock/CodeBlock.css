@@ -3,7 +3,7 @@
 .code-block{
     display: flex;
     flex-direction:column;
-    width: 99.5%;
+    width: 99.4%;
     border: 1px solid var(--border-color);
     border-radius: 12px;
 
@@ -18,14 +18,20 @@ pre{
 
 }
 
+code{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1rem;
+    border-radius: 8px;
+    background: #1E1E1E;
+    box-sizing: border-box;
+}
+
 pre > code{
     max-width: 100%;
     overflow-x: auto;
-    font-family: 'Source Code Pro', monospace;
-    font-size: 1rem;
     line-height: 1.5;
+    border-radius: 0px;
     color: #9CDCFE;
-    background-color: #1E1E1E;
     padding: 1rem;
     display: block;
 }
