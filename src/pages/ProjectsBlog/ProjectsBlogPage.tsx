@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { projectsBlogs } from '../../projects/projects-data';
 import { useState, useEffect } from 'react';
 import Markdown from 'react-markdown';
+import CodeBlock from '../../components/CodeBlock/CodeBlock';
 
 function ProjectsBlogPage() {
     const params = useParams();
@@ -36,7 +37,17 @@ function ProjectsBlogPage() {
 
     return (
       <div className="projects-blog-page">
-        <Markdown>{content}</Markdown>
+        <Markdown
+            children={content}
+            components={{
+                code({node, inline, className, children, ...props}){
+                    if (!inline){
+                        return <CodeBlock code={String(children).replace(/\n$/, '')} />;
+                    }
+                    return <code {...props}>{children}</code>;
+                }
+            }}
+        />
       </div>  
     );
 
