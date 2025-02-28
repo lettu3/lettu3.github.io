@@ -1,0 +1,9 @@
+{
+    "title": "elswitcher-title",
+    "date": "elswitcher-date",
+    "content" : {
+        "es" : "/markdownfiles/elswitcher-es.md",
+        "en" : "/markdownfiles/elswitcher-en.md",
+        "jp" : "/markdownfiles/elswitcher-jp.md"
+    }
+}

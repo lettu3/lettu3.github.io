@@ -1,6 +1,7 @@
-import ElSwitcher from "./el switcher/elswitcher-preview.json"
+import elSwitcherPreview from "./el switcher/elswitcher-preview.json";
+import elSwitcherBlog from "./el switcher/elswitcher-blog.json";
 
-export interface ProjectPreview {
+export interface ProjectPreview{
     title: string;
     date: string;
     description: string;
@@ -8,8 +9,20 @@ export interface ProjectPreview {
     image?: string;
 }
 
+export interface ProjectBlog{
+    title: string;
+    date: string;
+    content: {
+        es: string;
+        en: string;
+        jp?: string;
+    };
+}
 
 export const projectsPreviews: ProjectPreview[] = [
-    ElSwitcher,
-
+    elSwitcherPreview,
 ]
+
+export const projectsBlogs: ProjectBlog[] = [
+    elSwitcherBlog,
+];
