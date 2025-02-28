@@ -102,3 +102,7 @@ a {
 .testing-mode, .testing-mode * {
   all: unset;
 }
+
+.testing-mode script{
+  display: none;
+}
