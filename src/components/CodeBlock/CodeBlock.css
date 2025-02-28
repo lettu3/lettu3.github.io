@@ -18,7 +18,7 @@ pre{
 
 }
 
-code{
+pre > code{
     max-width: 100%;
     overflow-x: auto;
     font-family: 'Source Code Pro', monospace;
