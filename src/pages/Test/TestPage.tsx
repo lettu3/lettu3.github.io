@@ -1,6 +1,5 @@
 import CodeBlock from '../../components/CodeBlock/CodeBlock';
-import './TestPage.css'
-import { useEffect } from "react";
+import './TestPage.css';
 
                                                                                
 function TestPage () {
@@ -18,7 +17,7 @@ function TestPage () {
 
     return (
         <div className="test-page">
-            <CodeBlock />
+            <CodeBlock code=''/>
         </div>
     );
 }
