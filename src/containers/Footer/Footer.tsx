@@ -8,8 +8,8 @@ export default function Footer () {
     const theme = useSelector((state: RootState) => state.theme.value);
     const {t} = useTranslation();
 
-    const githubIcon = theme === 'light' ? './githubLight.svg' : './githubDark.svg';
-    const linkedinIcon = theme === 'light' ? './linkedinLight.svg' : './linkedinDark.svg';
+    const githubIcon = theme === 'light' ? '/githubLight.svg' : '/githubDark.svg';
+    const linkedinIcon = theme === 'light' ? '/linkedinLight.svg' : '/linkedinDark.svg';
 
     return (
         <div className='footer-component'>

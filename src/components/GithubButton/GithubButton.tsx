@@ -9,12 +9,12 @@ function GithubButton(){
 
     const isMobile = width < 480;
     
-    let currentIcon = theme === 'light' ? './githubLight.svg' : './githubDark.svg';
+    let currentIcon = theme === 'light' ? '/githubLight.svg' : '/githubDark.svg';
     if (isMobile && (theme === 'light')) {
-        currentIcon = './githubDark.svg'; 
+        currentIcon = '/githubDark.svg'; 
     }
     else if (isMobile && (theme === 'dark')) {
-        currentIcon = './githubLight.svg';
+        currentIcon = '/githubLight.svg';
     }
 
     return (

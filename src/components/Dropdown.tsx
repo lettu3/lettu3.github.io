@@ -22,7 +22,7 @@ export default function DropdownMenu({ items, buttonClassName, imgTitle, imgClas
   const theme = useSelector((state: RootState) => state.theme.value);
   const location = useLocation();
   
-  const current_icon = imgTitle ? `./${imgTitle}${theme === 'light' ? 'Light' : 'Dark'}.svg` : undefined;
+  const current_icon = imgTitle ? `/${imgTitle}${theme === 'light' ? 'Light' : 'Dark'}.svg` : undefined;
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
