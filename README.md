@@ -1,3 +1,7 @@
+# Considerations
+i include media without dynamic imports in this page, this is not by any means optimal, but i don't see other solution considering this is meant to be hosted in a gh-page
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
