@@ -13,7 +13,6 @@ type ProjectEntryBlogProps = {
 
 function ProjectEntryBlog({date, title, description, link, image}: ProjectEntryBlogProps ) {
   const {t} = useTranslation();
-  console.log(image);
 
   return (
     <div className="ProjectEntryBlog">
