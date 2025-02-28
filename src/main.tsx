@@ -8,31 +8,39 @@
 
 
 
-import './index.css'
-import './utils/i18n/index.ts'
-import { Provider } from 'react-redux'
-import {store} from './state/store.ts'
-import {createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
+import './index.css';
+import './utils/i18n/index.ts';
+import { Provider } from 'react-redux';
+import {store} from './state/store.ts';
+import {createBrowserRouter, 
+        createRoutesFromElements, 
+        RouterProvider } from 'react-router-dom';
 import {Route} from 'react-router-dom';
-import ReactDOM  from 'react-dom/client'
-import RootLayout from './layout/RootLayout/RootLayout.tsx'
-import HomePage from './pages/Home/HomePage.tsx'
-import AboutPage from './pages/About/AboutPage.tsx'
-import ProjectsPage from './pages/Projects/ProjectsPage.tsx'
-import TestLayout from './layout/TestLayout.tsx';
+import ReactDOM  from 'react-dom/client';
+import RootLayout from './layout/RootLayout/RootLayout.tsx';
+import HomePage from './pages/Home/HomePage.tsx';
+import AboutPage from './pages/About/AboutPage.tsx';
+import ProjectsPage from './pages/Projects/ProjectsPage.tsx';
+import ProjectsBlogPage from './pages/ProjectsBlog/ProjectsBlogPage.tsx';
+import TestLayout from './layout/TestLayout/TestLayout.tsx';
 import TestPage from './pages/Test/TestPage.tsx';
+import NotFound from './pages/NotFound/NotFoundPage.tsx';
 import WindowSizeListener from './utils/WindowSizeListener.tsx';
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<RootLayout/>}>,
+    <Route path='/' element={<RootLayout/>}>
       <Route index element={<HomePage/>}/>
       <Route path='about' element={<AboutPage/>}/>
-      <Route path='projects' element={<ProjectsPage/>}/>
+      <Route path='projects'>
+        <Route index element={<ProjectsPage/>}/>
+        <Route path=':title' element={<ProjectsBlogPage/>}/>
+      </Route>
       <Route path='test' element={<TestLayout/>}>
         <Route index element={<TestPage/>}/>
       </Route>
+      <Route path='*' element={<NotFound/>}/>
     </Route>
   )
 );
