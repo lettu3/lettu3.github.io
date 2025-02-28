@@ -8,6 +8,7 @@ import LinkerButton from '../../components/LinkerButton/LinkerButton';
 
 function AboutPage() {
     const { t } = useTranslation();
+    
     return (
         <div className="about-page">
             <section className='content'>
@@ -29,12 +30,15 @@ function AboutPage() {
             </section>
             <section className='links'>
                 <div className='links-cards'>
-                    <Card header={t('curriculum')} body={t('curriculum-body')}>
+                    <Card header={t('curriculum')} 
+                          body={t('curriculum-body')}>
                         <ResumeButton title='[ES] - Español' />
                         <ResumeButton title='[EN] - English' />
                     </Card>
-                    <Card header={t('projects')} body={t('projects-body')}>
-                        <LinkerButton linkto='/projects' title={t('projects')} />
+                    <Card header={t('projects')} 
+                          body={t('projects-body')}>
+                        <LinkerButton linkto='/projects' 
+                                      title={t('projects')} />
                     </Card>
                 </div>
             </section>
