@@ -22,7 +22,7 @@ function Burger (){
     const location = useLocation();
     const dispatch = useDispatch();
 
-    const burgerPath = theme === 'light' ? './burgerLight.svg' : './burgerDark.svg';
+    const burgerPath = theme === 'light' ? '/burgerLight.svg' : '/burgerDark.svg';
 
     const handleToggle = () => {
         dispatch(toggleBurger(!isOpen));
