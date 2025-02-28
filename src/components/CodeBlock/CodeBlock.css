@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+.code-block{
+    display: flex;
+    flex-direction:column;
+    width: 99.5%;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+
+}
+
+pre{
+    white-space: pre-wrap;
+    word-wrap: normal;
+    margin: 0;
+    background: none;
+    overflow-x: auto;
+
+}
+
+code{
+    max-width: 100%;
+    overflow-x: hidden;
+    width: 100%;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #9CDCFE;
+    background-color: #1E1E1E;
+    padding: 1rem;
+    display: block;
+}
+
+.token.comment{
+    color: #6A9955;
+}
+.token.keyword {
+    color: #C586C0; 
+}
+
+.token.function {
+    color: #DCDCAA;
+}
+
+.token.punctuation {
+    color: #D4D4D4;
+}
+
+.token.operator {
+    color: #D4D4D4; 
+}
+
+.token.string {
+    color: #CE9178;
+}
+
+.code-block span{
+    color: #9CDCFE;
+}
+#text{
+    color: #9CDCFE;
+}
+
+
+.code-bar{
+    display: flex;
+    background: var(--footer-bg-color);
+    padding: 10px;
+    justify-content: end;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.code-top{
+    width: 100%;
+    background: var(--footer-bg-color);
+    height: 24px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
