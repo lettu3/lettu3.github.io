@@ -15,7 +15,10 @@ function ContactModal({onClose}: ContactModalProps) {
                 <h1>{t('contact')}</h1>
                 <p>{t('sendmail')}</p>
                 <p>ignas.gomezb12@gmail.com</p>
-                <button className="contact-close-button" onClick={onClose}>{t("close")}</button>
+                <button className="contact-close-button" 
+                        onClick={onClose}>
+                    {t("close")}
+                </button>
             </div> 
         </div>,
         document.getElementById("modal-root") as HTMLElement
