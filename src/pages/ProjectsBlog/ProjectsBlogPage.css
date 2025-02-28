@@ -1,0 +1,35 @@
+.projects-blog-page{
+    margin-top: 10%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.projects-blog-page h1{
+    font-size: 5rem;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+}
+
+.projects-blog-page h2{
+    font-size: 2.5rem;
+}
+
+.projects-blog-page h3{
+    font-size: 2rem;
+}
+
+.projects-blog-page h4{
+    font-size: 1.5rem;
+}
+
+@media (max-width: 480px){
+    .projects-blog-page{
+        margin-top: 20%;
+    }
+}
