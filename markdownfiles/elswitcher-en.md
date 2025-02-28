@@ -64,7 +64,7 @@ Posito uvis pignora? Est Dictys indueret si
 [sororem](http://tenens-anguigenae.org/educta-a) et flectat nihil, iussis meum
 urbem animam huc accessere! Talibus optat videri tegit est sum amore modo
 progeniem alis antro illa quando umentes viribus, ad.
-
+~~~typescript
     if (leakDns >= crtFlash * of_login) {
         podcast(-3);
         plug -= browser * bit + unmountWpa;
@@ -88,8 +88,9 @@ progeniem alis antro illa quando umentes viribus, ad.
         errorBoot(target + java, 3, 2 + led);
         p_computer = cad;
     }
+~~~
 
 [Pentheus per partu](http://ab-sinuavi.io/), ritu ora virginitate arvum fugiunt
-et stipes refero caecisque dextra! Specie convivia. Inductae postquam nympha
+et `stipes` refero caecisque dextra! Specie convivia. Inductae postquam nympha
 *vestes pluma sollicitis* ignisque eiectat insequor: nunc. Peiora artus!
 
