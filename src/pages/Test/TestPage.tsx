@@ -1,9 +1,12 @@
+import CodeBlock from '../../components/CodeBlock/CodeBlock';
 import './TestPage.css'
 import { useEffect } from "react";
 
                                                                                
 function TestPage () {
 
+
+    /*
     useEffect(() => {
         document.body.classList.add("testing-mode");
 
@@ -11,10 +14,11 @@ function TestPage () {
             document.body.classList.remove("testing-mode");                   
         }; 
     }, []);
+    */
 
     return (
         <div className="test-page">
-            <h1>Testing Page</h1>
+            <CodeBlock />
         </div>
     );
 }
