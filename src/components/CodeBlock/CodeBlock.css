@@ -70,6 +70,18 @@ code{
     border-bottom-right-radius: 12px;
 }
 
+.copy-button{
+    border:none;
+    color: white;
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+.copy-button:hover{
+    background: var(--primary-color-darker);
+    cursor: pointer;
+}
+
 .code-top{
     width: 100%;
     background: var(--footer-bg-color);
