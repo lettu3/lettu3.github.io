@@ -17,7 +17,7 @@ function AboutPage() {
                 </div>
                 <div className='about-content'>
                     <div className="about-pp"><Personal /></div>
-                    <div className="about-body"><p>{t('lorem')}</p></div>
+                    <div className="about-body"><p>{t('aboutme')}</p></div>
                 </div>
             </section>
             <section className='tech'>
