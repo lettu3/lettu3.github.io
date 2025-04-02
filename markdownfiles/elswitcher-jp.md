@@ -91,10 +91,6 @@ progeniem alis antro illa quando umentes viribus, ad.
 ~~~
 
 [Pentheus per partu](http://ab-sinuavi.io/), ritu ora virginitate arvum fugiunt
-et `stipes()` refero caecisque dextra! Specie convivia. Inductae postquam nympha
+et `stipes` refero caecisque dextra! Specie convivia. Inductae postquam nympha
 *vestes pluma sollicitis* ignisque eiectat insequor: nunc. Peiora artus!
 
-```
-cd $foo
-exec $bar
-```
