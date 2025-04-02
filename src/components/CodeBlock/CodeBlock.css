@@ -3,7 +3,7 @@
 .code-block{
     display: flex;
     flex-direction:column;
-    width: 99.4%;
+    width: 99%;
     border: 1px solid var(--border-color);
     border-radius: 12px;
 
@@ -22,7 +22,8 @@ code{
     font-family: 'Source Code Pro', monospace;
     font-size: 1rem;
     border-radius: 8px;
-    background: #1E1E1E;
+    color: #FFFFFF;
+    background: #161616;
     box-sizing: border-box;
 }
 
@@ -31,36 +32,35 @@ pre > code{
     overflow-x: auto;
     line-height: 1.5;
     border-radius: 0px;
-    color: #9CDCFE;
     padding: 1rem;
     display: block;
 }
 
 .token.comment{
-    color: #6A9955;
+    color: #42717B;
 }
 .token.keyword {
-    color: #C586C0; 
+    color: #FFE863; 
 }
 
 .token.function {
-    color: #DCDCAA;
+    color: #FFE863;
 }
 
 .token.punctuation {
-    color: #D4D4D4;
+    color: #FFFFFF;
 }
 
 .token.operator {
-    color: #D4D4D4; 
+    color: #66AABB; 
 }
 
 .token.string {
-    color: #CE9178;
+    color: #B7416E;
 }
 
 .code-block span{
-    color: #9CDCFE;
+    color: #FFFFFF;
 }
 #text{
     color: #9CDCFE;
