@@ -29,15 +29,19 @@ function LangDropDown () {
         switch (item.title) {
             case "[EN] - English":
                 i18next.changeLanguage('en');
+                localStorage.setItem('i18nextLng', 'en');
                 break;
             case "[ES] - Espanol":
                 i18next.changeLanguage('es');
+                localStorage.setItem('i18nextLng', 'es');
                 break;
             case "[JP] - 日本語":
                 i18next.changeLanguage('jp');
+                localStorage.setItem('i18nextLng', 'jp');
                 break;
             default:
                 i18next.changeLanguage('en');
+                localStorage.setItem('i18nextLng', 'en');
                 break;
         }
     };
