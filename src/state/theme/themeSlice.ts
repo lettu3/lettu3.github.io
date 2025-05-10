@@ -3,6 +3,11 @@ import { createSlice } from "@reduxjs/toolkit";
 const getTheme = () : string => {
     let res : string = "dark";
     try {
+        const storedTheme = localStorage.getItem("theme");
+        if (storedTheme) {
+            res = storedTheme
+            return res;
+        }
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
         res = prefersDark.matches ? "dark" : "light";
     }
@@ -28,6 +33,7 @@ const themeSlice = createSlice({
     reducers: {
         toggleTheme: (state) => {
             state.value = state.value === "dark" ? "light" : "dark";
+            localStorage.setItem("theme", state.value);
             console.log("Theme changed to: ", state.value);
         }
     }
