@@ -6,7 +6,6 @@ import Card from '../../components/Card/Card';
 import ResumeButton from '../../components/ResumeButton/ResumeButton';
 import LinkerButton from '../../components/LinkerButton/LinkerButton';
 import { motion } from 'framer-motion';
-import { i } from 'framer-motion/client';
 
 
 function AboutPage() {
