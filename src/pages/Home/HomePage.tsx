@@ -1,14 +1,19 @@
 import './HomePage.css';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-
+import {motion} from 'framer-motion';
 
 function HomePage() {
-  const {t} = useTranslation();
+  const {t, i18n} = useTranslation();
 
   return (
     <div className="home-page">
-      <div className="body-column-1">
+      <motion.div 
+        className='body-column-1'
+        key={i18n.language}
+        initial={{opacity: 0, y:24}}
+        animate={{opacity: 1, y: 0}}
+        transition={{duration : 0.5, ease: 'easeOut'}}>
         <div className="welcome">
           <h1>
             {t('welcome')}
@@ -22,7 +27,7 @@ function HomePage() {
             <p>/<a href="https://lettu3.github.io/offtopic">{t('offtopic')}</a></p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import './Card.css';
-
+import {motion} from 'framer-motion';
 
 type CardProps = {
     header?: string;
@@ -10,7 +10,13 @@ type CardProps = {
 
 function Card({header, body, children}: CardProps) {
     return (
-        <div className='card'>
+        <motion.div 
+            className='card'
+            key={header}
+            initial={{opacity: 0, y: 24, scale: 0.9}}
+            whileInView={{opacity: 1, y: 0, scale: 1, transition: {duration: 0.5, ease: 'easeOut'}}}
+            viewport={{once: true}}
+            >
             {(header || body) && (
                 <div className='card-content'>
                     <div className='card-header'
@@ -31,7 +37,7 @@ function Card({header, body, children}: CardProps) {
             >
                 {children}
             </div>
-        </div>
+        </motion.div>
     );
 };
 
