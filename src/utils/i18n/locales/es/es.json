@@ -3,7 +3,7 @@
     "welcome" : "Bienvenido a mi sitio 👋",
     "index": "Indice",
     "about": "Sobre mi",
-    "aboutme": "Hola, me llamo Ignacio. Actualmente estoy cursando la Licenciatura en Ciencias de la Computación en FAMAF - UNC. Mis intereses actualmente son el desarrollo web (especificamente, en puestos de desarrollo full-stack o frontend),  y desarrollo de videojuegos. Desde Abril de 2025 me estoy desempeñando como Desarrollador Frontend en Inverte Global.",    "projects": "Proyectos",
+    "aboutme": "Hola, me llamo Ignacio. Actualmente estoy cursando la Licenciatura en Ciencias de la Computación en FAMAF - UNC. Mis intereses actualmente son el desarrollo web (especificamente, en puestos de desarrollo full-stack o frontend),  y desarrollo de videojuegos. Desde Abril de 2025 me estoy desempeñando como FullStack Engineer en Inverte Global.",    "projects": "Proyectos",
     "projects-body": "Algunos de los proyectos en los que he trabajado",
     "offtopic": "Offtopic",
     "footer": "Esta pagina web fue hecha con React, Redux, i18n y buildeada con Vite",
